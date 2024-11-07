@@ -3,7 +3,7 @@ from PIL import Image
 import torch
 import numpy as np
 import cv2
-
+from pathlib import Path
 import ssl
 from urllib.request import urlopen
 
@@ -12,7 +12,7 @@ from urllib.request import urlopen
 @st.cache_resource
 def load_model():
     ssl._create_default_https_context = ssl._create_unverified_context
-    model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5s.pt', force_reload=True)
+    model = torch.hub.load('ultralytics/yolov5', 'custom', path=Path('best.pt'), force_reload=True)
     return model
 
 # Object Detection function

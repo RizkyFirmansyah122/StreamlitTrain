@@ -12,7 +12,7 @@ from urllib.request import urlopen
 @st.cache_resource
 def load_model():
     ssl._create_default_https_context = ssl._create_unverified_context
-    model = torch.hub.load('ultralytics/yolov5', 'custom', path=Path('best.pt'), force_reload=True)
+    model = torch.hub.load("ultralytics/yolov5", "custom", path="D:/SEMETER5/StreamlitTrain/best.pt")
     return model
 
 # Object Detection function

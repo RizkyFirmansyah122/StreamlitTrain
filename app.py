@@ -4,7 +4,7 @@ from PIL import Image
 import numpy as np
 
 # Load Model
-model = YOLO("D:\SEMETER5\StreamlitTrain\yolo76.pt")
+model = YOLO("yolo76.pt")
 
 st.title("Object Detection App")
 st.write("Upload an image to detect objects.")

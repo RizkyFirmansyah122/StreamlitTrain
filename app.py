@@ -68,7 +68,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header
-st.markdown("<h2>Detection Cell Cancer Cervix With AI</h2>", unsafe_allow_html=True)
+st.markdown("<h2>DETECTION CELL CANCER CERVIX WITH AI</h2>", unsafe_allow_html=True)
 st.markdown("<h3>Upload your images to detect objects in real-time!</h3>", unsafe_allow_html=True)
 
 # Upload Multiple Files
